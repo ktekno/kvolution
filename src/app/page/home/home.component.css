@@ -145,11 +145,11 @@
         object-fit: contain;
     }
     .product-item-image .price-badge{
-        left: 16px !important;
+        left: 17px !important;
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
     .product-item-image .price-badge{
         bottom: 120px !important;
     }
