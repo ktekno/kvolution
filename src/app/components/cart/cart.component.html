@@ -1,0 +1,32 @@
+<ng-container>
+<div class="sidenav" id="cartNavBar">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a> 
+    <div class="cart-navbar-main d-flex flex-column">
+        <div class="cart-holder">
+            <span style="font-weight: bolder;">My Cart</span>
+            <div class="cart-item-container">
+                <div class="d-flex justify-content-start cart-spec-holder">
+                    <span class="discount-badge">Sale 50% off</span>
+                    <img src="/assets/temp-img/acer.png" class="cart-item mr-4">
+                    <div class="specs-holder">
+                        <span style="font-weight: bold;">Specs Specs</span><br>
+                        <span>Specs Specs Specs</span>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-start mt-2">
+                    <div class="d-flex justify-content-start">
+                        <button class="cart-delete mr-2">X</button>
+                        <button class="cart-edit">Edit</button>
+                    </div>
+                    <span class="cart-multiplier">1 x &nbsp;</span>
+                    <span class="cart-price">₱60,000.00</span>
+                </div>
+            </div>
+        </div> 
+        <div class="cart-footer d-flex flex-column mb-3">
+            <button class="cart-button" style="background:#fcaf43; color:white;">Proceed to Checkout</button>
+            <button class="cart-button" style="background:#0ca6ea; color:black;">View My Cart</button>
+        </div> 
+    </div>
+</div>
+</ng-container>

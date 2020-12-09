@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './page/home/home.component';
+import { ItemCarouselComponent } from './components/item-carousel/item-carousel.component';
+import { CartComponent } from './components/cart/cart.component';
 
 const routes: Routes = [
   // lazy-loaded route, a module with its own sub-routes
@@ -35,7 +37,9 @@ const routes: Routes = [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    ItemCarouselComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

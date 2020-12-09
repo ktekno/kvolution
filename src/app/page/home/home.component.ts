@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
 
 
 @Component({
@@ -9,30 +8,82 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class HomeComponent implements OnInit {
 
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: false,
-    touchDrag: true,
-    pullDrag: false,
-    dots: false,
-    navSpeed: 700,
-    navText: ['<img src=assets/img/left-arrow.png>', '<img src=assets/img/right-arrow.png>'],
-    responsive: {
-      0: {
-        items: 1
-      },
-      200: {
-        items: 2
-      },
-      640: {
-        items: 3
-      },
-      940: {
-        items: 4
-      }
-    },
-    nav: false
-  }
+  public featuredProducts = [{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/lenovo.png",
+    priceBadge: "₱10,000.00",
+    titleSpecs: "SPECS",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  },{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/acer.png",
+    priceBadge: "₱20,000.00",
+    titleSpecs: "SPECS",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  },{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/asus.png",
+    priceBadge: "₱30,000.00",
+    titleSpecs: "SPECS",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  },{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/dell.png",
+    priceBadge: "₱40,000.00",
+    titleSpecs: "SPECS",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  },{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/acer.png",
+    priceBadge: "₱50,000.00",
+    titleSpecs: "SPECS",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  },{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/lenovo.png",
+    priceBadge: "₱60,000.00",
+    titleSpecs: "SPECS",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  }];
+  
+  public bestSellerProducts = [{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/lenovo.png",
+    priceBadge: "₱10,000.00",
+    titleSpecs: "SPECS2",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  },{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/acer.png",
+    priceBadge: "₱20,000.00",
+    titleSpecs: "SPECS2",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  },{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/asus.png",
+    priceBadge: "₱30,000.00",
+    titleSpecs: "SPECS2",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  },{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/dell.png",
+    priceBadge: "₱40,000.00",
+    titleSpecs: "SPECS2",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  },{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/acer.png",
+    priceBadge: "₱50,000.00",
+    titleSpecs: "SPECS2",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  },{
+    discountBadge: "Sale 50% off",
+    imgSrc: "/assets/temp-img/lenovo.png",
+    priceBadge: "₱60,000.00",
+    titleSpecs: "SPECS2",
+    subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
+  }];
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,22 @@
+
+    <div class="d-flex justify-content-between">    
+        <button class="nav-button" (click)="owlCar.prev()"><img src="assets/img/left-arrow.png"></button>
+        <owl-carousel-o [options]="customOptions" class="cust-owl-carousel" #owlCar>
+            <ng-container *ngFor="let navParam of navParams">
+                <ng-template carouselSlide>
+                    <div class="product-item-image ">
+                        <span class="discount-badge">{{navParam.discountBadge}}</span>
+                        <img src={{navParam.imgSrc}} class="product-item-carousel">
+                        <div  class="d-flex justify-content-after"> 
+                            <span class="price-badge">{{navParam.priceBadge}}</span>
+                        </div>
+                    </div>
+                    <div class="specs-holder">
+                        <span style="font-weight: bold;">{{navParam.titleSpecs}}</span><br>
+                        <span [innerHTML]="navParam.subSpecs"></span>
+                    </div>
+                </ng-template> 
+            </ng-container>
+       </owl-carousel-o>
+        <button class="nav-button" (click)="owlCar.next()"><img src="assets/img/right-arrow.png"></button>
+    </div>
