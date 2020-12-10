@@ -1,5 +1,6 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { AppService } from '../../app.service'; 
 
 @Component({
   selector: 'app-item-carousel',
@@ -32,7 +33,7 @@ export class ItemCarouselComponent implements OnInit {
     },
     nav: false
   }
-  constructor() { }
+  constructor(public _appService: AppService) { }
 
   ngOnInit(): void {
     

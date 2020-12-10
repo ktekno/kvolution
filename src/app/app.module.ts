@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './page/home/home.component';
 import { ItemCarouselComponent } from './components/item-carousel/item-carousel.component';
 import { CartComponent } from './components/cart/cart.component';
+import { AppService } from './app.service'; 
 
 const routes: Routes = [
   // lazy-loaded route, a module with its own sub-routes
@@ -48,7 +49,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     CarouselModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

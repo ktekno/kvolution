@@ -36,8 +36,8 @@
 }
 
 .header a.icons {
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	background-color: aliceblue;
 	margin-left: 5px;
 	border-radius: 3px;
@@ -46,23 +46,39 @@
 .header img.icons {
 	width: 20px;
 	height: 25px;
-	margin-top: -5px;
-	margin-left: -6px;
+	margin-top: -8px;
+	margin-left: -8px;
 }
 
 #subNavBar img.icons {
 	width: 20px;
 	height: 25px;
-	margin-top: -5px;
-	margin-left: -6px;
+	margin-top: -8px;
+	margin-left: -8px;
 }
 
 #subNavBar a.icons {
-	width: 40px;
-	height: 40px;
+	width: 35px;
+	height: 35px;
 	background-color: aliceblue;
 	margin-left: 5px;
 	border-radius: 3px;
+}
+
+#subNavBar a.cart-icon{
+	position: relative;
+}
+
+.indicator{
+	position: absolute;
+	top: -10px;
+	left: 70%;
+	width: 20px;
+	height: 20px;
+	font-size: 12px;
+    background-color: #fcaf43;
+    border-radius: 10px;
+	text-align: center;
 }
 
 .header-right {
@@ -152,7 +168,7 @@
     
 	.header .icon-holder {
 		position: absolute;
-		top: 22px;
+		top: 25px;
 		width: 78%;
 		margin-right: 20px;
 	}
@@ -189,7 +205,7 @@
 	}
 	.header .icon-holder {
 		position: absolute;
-		top: 22px;
+		top: 25px;
 		width: 78%;
 		margin-right: 20px;
 	}

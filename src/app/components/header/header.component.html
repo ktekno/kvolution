@@ -33,12 +33,14 @@
             <img src="assets/img/profile@2x.png" class="icons">
         </a>
     </div> 
-</nav>  
+</nav>
+<app-cart #cart></app-cart>  
 <div id="subNavBar" style="display: flex; justify-content: flex-end" >
     <input class="searchbar" name="search" placeholder="Search..">
     <button class="searchbutton">Search</button>
     <div class="icon-holder" style="display: flex; justify-content: flex-end;" >
-        <a class="nav-link icons" href="#" role="button" aria-haspopup="true" aria-expanded="false" (click)="cart.openCart()">
+        <a class="nav-link icons cart-icon" href="#" role="button" aria-haspopup="true" aria-expanded="false" (click)="cart.openCart()">
+            <span class="indicator">99</span>
             <img src="assets/img/cart@2x.png" class="icons">
         </a>
         <span style="padding-top: 7px; padding-left: 7px; color: white;">Cart</span>
@@ -47,4 +49,3 @@
         </a> -->
     </div> 
 </div>
-<app-cart #cart></app-cart>
