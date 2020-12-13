@@ -1,7 +1,11 @@
 
+#page-container{
+    background-color: #f3f3f3 !important;
+}
+
 .cart-page{
     width: 100%;
-    height: 100vw;
+    height: 100%;
     background-color: #f3f3f3;
     left: 0;
     margin-top: 0px;
@@ -28,7 +32,7 @@
 }  
 .cart-table th {
     font-size: 12px;
-    color:  lightgray;
+    color:  #969696;
 }  
 .cart-table td {
     border-bottom: 1px solid #dddddd;
@@ -65,7 +69,7 @@
     text-align: right;
     margin-top: 15px;
     margin-right: 5px; 
-    color: lightgray; 
+    color: #969696; 
     font-weight: bold;
 }
 .price-details {
@@ -96,41 +100,14 @@
     margin-top: 10px;
 }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  height: auto;
+:host >>> ngx-number-spinner .horizontal-wrapper{
+    height: 30px;
+    margin-top: 10px;
 }
-
-.stepper {
-  border: 1px solid #eee;
-  display: inline-block;
-  overflow: visible;
-  height: 30px;
-  background: #fff;
-  padding: 1px;
-  margin-top: 10px;
-}
-
-.stepper input {
-  width: 3em;
-  height: 100%;
-  text-align: center;
-  border: 0;
-  background: transparent;
-  color: #000;
-}
-
-.stepper button {
-  width: 1.4em;
-  font-weight: 300;
-  height: 100%;
-  line-height: 0.1em;
-  font-size: 1.4em;
-  padding: 0.2em !important;
-  background: #eee;
-  color: #333;
-  border: none;
+:host >>> ngx-number-spinner button{
+    padding-top: 0 !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
 }
 
 .total-price{
@@ -143,6 +120,86 @@
     margin-bottom: 10px;
 }
 
+.continueshopping{
+    height: 40px;
+    background-color: #fcaf43;
+    border: 0px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 15px 0px 15px;
+    font-weight: bold;
+}
+
+#discount-info{
+    margin-top: 10px;
+}
+
+#discount-image{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    object-fit: contain;
+    background-color: #f3f3f3;
+}
+
+.discount-notice {
+    margin-left: 10px; 
+    font-size: 14px; 
+    vertical-align: middle;
+    line-height: 4;
+}
+
+#summary-holder{
+    margin-top: 10px;
+}
+
+.summary-table{
+    width: 100%;
+}
+
+.summary-table-td-first{
+    width: 30%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+
+.summary-table tr td{
+    color:  #969696;
+}
+
+.voucher-input {
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #969696;
+    padding-left: 10px;
+}
+
+.voucher-button{
+    height: 40px;
+    background-color: #fcaf43;
+    border: 0px;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 15px 0px 15px;
+    font-weight: bold;
+}
+
+.checkout-button {
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center; 
+    font-weight: bold;
+    padding:10px 10px 10px; 
+    font-size:14px;
+    border: 0px;
+}
 @media screen and (max-width: 720px) {
     .cart-page .spacer{
         height: 0px;
@@ -186,12 +243,22 @@
       font-size: 12px !important;
       padding: 0px !important;
     }
+    .total-price{
+        text-align: left !important;
+    }
+    .discount-notice {
+        margin-left: 10px; 
+        font-size: 14px; 
+        vertical-align: middle;
+        line-height: 1;
+    }
+    
+}
+
+
+@media screen and (max-width: 410px) {
     .price-details {
         margin-left: -30px;
         flex-direction: column !important;
-    }
-    .total-price{
-        
-        text-align: left !important;
     }
 }

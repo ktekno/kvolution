@@ -20,14 +20,14 @@
                             <button class="cart-detail"  (click)="goToDetails(i)">Details</button>
                         </div>
                         <span class="cart-multiplier">{{cart_content.quantity}} x &nbsp;</span>
-                        <span class="cart-price">{{cart_content.priceBadge}}</span>
+                        <span class="cart-price">₱{{cart_content.priceBadge}}</span>
                     </div>
                 </div>
             </ng-container>
         </div> 
         <div class="cart-footer d-flex flex-column mb-3">
             <button class="cart-button" style="background:#fcaf43; color:white;">Proceed to Checkout</button>
-            <button class="cart-button" style="background:#0ca6ea; color:black;" [routerLink] = "'/cart'">View My Cart</button>
+            <button class="cart-button" style="background:#0ca6ea; color:black;" (click)="closeNav()" [routerLink] = "'/cart'">View My Cart</button>
         </div> 
     </div>
 </div>

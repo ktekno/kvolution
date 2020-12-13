@@ -1,16 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgxNumberSpinnerModule } from 'ngx-number-spinner';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './page/home-page/home.component';
+import { HomePageComponent } from './page/home-page/home.component';
+import { CartPageComponent } from './page/cart-page/cart-page.component';
 import { ItemCarouselComponent } from './components/item-carousel/item-carousel.component';
 import { CartComponent } from './components/cart/cart.component';
 import { AppService } from './app.service'; 
@@ -20,16 +22,19 @@ import { AppService } from './app.service';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent,
     ItemCarouselComponent,
-    CartComponent
+    CartComponent,
+    
+    HomePageComponent,
+    CartPageComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     CarouselModule,
-    CommonModule
+    CommonModule,
+    NgxNumberSpinnerModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent],
