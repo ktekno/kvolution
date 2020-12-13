@@ -1,0 +1,31 @@
+<div id="summary-holder">
+    <span style="font-weight: bold;">Summary</span>
+    <table class="summary-table">
+        <tr style="height: 20px;">
+          <th style="font-weight: normal !important;">{{getQuantityTotal()}} Items</th>
+          <th style="text-align: right;">₱{{getPriceTotal().toLocaleString(undefined, {minimumFractionDigits: 2})}}</th>
+        </tr>
+        <tr *ngFor="let cart_content of _appService.cart_contents; let i = index;">
+            <td class="summary-table-td-first" style="text-align: left;">
+                {{cart_content.quantity}} x {{cart_content.titleSpecs}}
+            </td>
+            <td style="text-align: right;">
+                ₱{{cart_content.priceBadge.toLocaleString(undefined, {minimumFractionDigits: 2})}}
+            </td>
+        </tr>
+        <tr style="vertical-align: top; height: 40px;">
+            <th style="font-weight: normal !important; text-align: left; border-bottom: 1px solid #dddddd;">
+                Shipping Fee
+            </th>
+            <th style="text-align: right; border-bottom: 1px solid #dddddd;">
+                ₱0
+            </th><br>
+        </tr>
+      </table>
+      <table class="summary-table mt-2">
+          <tr style="height: 20px;">
+            <th>Total</th>
+            <th style="text-align: right;">₱{{getPriceTotal().toLocaleString(undefined, {minimumFractionDigits: 2})}}</th>
+          </tr>
+    </table>
+  </div>
