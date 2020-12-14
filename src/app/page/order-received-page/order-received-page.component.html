@@ -1,0 +1,78 @@
+<div class="order-received-page">
+    <div class="spacer"></div>
+    <div class="order-received-page-content">
+        <div class="logo-header d-flex justify-content-between">
+            <img src="assets/img/Asset 3@4x.png" class="logo">
+        </div>
+        <div class="order-received-header d-flex justify-content-between mt-5 mb-5">
+            <span class="thank-you-header">Thank you for shopping with us</span>
+        </div>
+        <span class="header-text">Hi Firstname Surname</span>
+        <p class="mb-5">We received your order <a href="#">1234567890</a> on Wednesday, November 11, 2020 01:53:00 and you paid this via Credit Card. We are getting your order ready and will let you know once it's on its way. We wish you enjoy shopping and hope to see you again soon!</p>
+        <span class="header-text">✔️ Paid via Credit Card </span>
+        <div class="line-divider mb-3"></div>
+        <span class="header-text">Delivery Details</span>
+        <table class="info-table mt-3">
+            <tr>
+                <td width=100>
+                    Name
+                </td>
+                <td style="font-weight: 500;">
+                    Firstname Lastname
+                </td>
+            </tr>
+            <tr>
+                <td width=100 style="vertical-align: top;">
+                    Address
+                </td>
+                <td style="font-weight: 500; ">
+                    #70 Jasmine St. Lodora Village, Brgy Tunasan, Muntinlupa, NCR
+                </td>
+            </tr>
+            <tr>
+                <td width=100>
+                    Email
+                </td>
+                <td style="font-weight: 500;">
+                    support@ktronix.com
+                </td>
+            </tr>
+            <tr>
+                <td width=100>
+                    Phone
+                </td>
+                <td style="font-weight: 500;">
+                    +639054302834
+                </td>
+            </tr>
+        </table>
+        <div class="line-divider mb-3"></div>
+        <span class="header-text">Product Details</span>
+        <div class="spacer"></div>
+        <ng-container *ngFor="let ordered_content of ordered_contents; let i = index;">
+            <div class="ordered-products d-flex justify-content-between mb-3">
+                <div class="ordered-products d-flex justify-content-start mb-3">
+                    <img src={{ordered_content.imgSrc}} class="ordered-item mr-4">
+                    <div class="specs-holder">
+                        <span style="font-weight: bold;">{{ordered_content.titleSpecs}}</span><br>
+                        <span [innerHTML]="ordered_content.subSpecs"></span>  
+                        <div *ngIf="isSmallMobileDevice == true" class="price-holder d-flex justify-content-between">
+                            <span style="width: 100%; margin: auto;">{{ordered_content.quantity}}</span>
+                            <span style="width: 100%; margin: auto;">&nbsp;x&nbsp;</span>
+                            <span style="font-weight: bold;">₱{{ordered_content.priceBadge.toLocaleString(undefined, {minimumFractionDigits: 2})}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="isSmallMobileDevice == false"  class="price-holder d-flex justify-content-between">
+                    <span style="width: 100%; margin: auto;">{{ordered_content.quantity}}</span>
+                    <span style="width: 100%; margin: auto;">x</span>
+                    <span style="font-weight: bold;">₱{{ordered_content.priceBadge.toLocaleString(undefined, {minimumFractionDigits: 2})}}</span>
+                </div>
+            </div>
+        </ng-container>
+        <div class="line-divider mb-3"></div>
+        <app-cart-summary-table></app-cart-summary-table>
+        <div class="spacer"></div>
+    </div>
+    <div class="spacer"></div>
+</div>
