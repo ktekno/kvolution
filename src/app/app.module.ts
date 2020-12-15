@@ -20,6 +20,9 @@ import { HomePageComponent } from './page/home-page/home.component';
 import { CartPageComponent } from './page/cart-page/cart-page.component';
 import { CheckoutPageComponent } from './page/checkout-page/checkout-page.component';
 import { OrderReceivedPageComponent } from './page/order-received-page/order-received-page.component';
+import { LoginPageComponent } from './page/login-page/login-page.component';
+import { RegisterPageComponent } from './page/register-page/register-page.component';
+import { UserInfoPageComponent } from './page/user-info-page/user-info-page.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,10 @@ import { OrderReceivedPageComponent } from './page/order-received-page/order-rec
     HomePageComponent,
     CartPageComponent,
     CheckoutPageComponent,
-    OrderReceivedPageComponent
+    OrderReceivedPageComponent,
+    LoginPageComponent,
+    RegisterPageComponent,
+    UserInfoPageComponent
   ],
   imports: [
     BrowserModule,

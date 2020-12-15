@@ -3,6 +3,7 @@
     height: 200px;
     object-fit: contain;
     background-color: #f3f3f3;
+    border-bottom: 7px solid #fcaf43;
 }
 
 .cust-owl-carousel {

@@ -29,7 +29,7 @@
         <a class="nav-link icons" href="#" role="button" aria-haspopup="true" aria-expanded="false">
             <img src="assets/img/order_list@2x.png" class="icons">
         </a>
-        <a class="nav-link icons" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link icons" href="/login" role="button" aria-haspopup="true" aria-expanded="false">
             <img src="assets/img/profile@2x.png" class="icons">
         </a>
     </div> 
@@ -40,7 +40,7 @@
     <button class="searchbutton">Search</button>
     <div class="icon-holder" style="display: flex; justify-content: flex-end;" >
         <a class="nav-link icons cart-icon" role="button" aria-haspopup="true" aria-expanded="false" (click)="cart.openCart()">
-            <span class="indicator">99</span>
+            <span class="indicator">{{getQuantityTotal()}}</span>
             <img src="assets/img/cart@2x.png" class="icons">
         </a>
         <span style="padding-top: 7px; padding-left: 7px; color: white;">Cart</span>
