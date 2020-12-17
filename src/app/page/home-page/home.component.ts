@@ -9,37 +9,43 @@ import { Component, OnInit } from '@angular/core';
 export class HomePageComponent implements OnInit {
 
   public featuredProducts = [{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "New Arrival",
+    itemClassification: "new-arival",
     imgSrc: "/assets/temp-img/lenovo.png",
     priceBadge: "₱10,000.00",
     titleSpecs: "SPECS",
     subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
   },{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "Sale 50% off",
+    itemClassification: "discount",
     imgSrc: "/assets/temp-img/acer.png",
     priceBadge: "₱20,000.00",
     titleSpecs: "SPECS",
     subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
   },{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "New Arrival",
+    itemClassification: "new-arival",
     imgSrc: "/assets/temp-img/asus.png",
     priceBadge: "₱30,000.00",
     titleSpecs: "SPECS",
     subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
   },{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "Sale 50% off",
+    itemClassification: "discount",
     imgSrc: "/assets/temp-img/dell.png",
     priceBadge: "₱40,000.00",
     titleSpecs: "SPECS",
     subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
   },{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "New Arrival",
+    itemClassification: "new-arival",
     imgSrc: "/assets/temp-img/acer.png",
     priceBadge: "₱50,000.00",
     titleSpecs: "SPECS",
     subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
   },{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "Sale 50% off",
+    itemClassification: "discount",
     imgSrc: "/assets/temp-img/lenovo.png",
     priceBadge: "₱60,000.00",
     titleSpecs: "SPECS",
@@ -47,37 +53,43 @@ export class HomePageComponent implements OnInit {
   }];
   
   public bestSellerProducts = [{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "Sale 50% off",
+    itemClassification: "discount",
     imgSrc: "/assets/temp-img/lenovo.png",
     priceBadge: "₱10,000.00",
     titleSpecs: "SPECS2",
     subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
   },{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "New Arrival",
+    itemClassification: "new-arival",
     imgSrc: "/assets/temp-img/acer.png",
     priceBadge: "₱20,000.00",
     titleSpecs: "SPECS2",
     subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
   },{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "Sale 50% off",
+    itemClassification: "discount",
     imgSrc: "/assets/temp-img/asus.png",
     priceBadge: "₱30,000.00",
     titleSpecs: "SPECS2",
     subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
   },{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "New Arrival",
+    itemClassification: "new-arival",
     imgSrc: "/assets/temp-img/dell.png",
     priceBadge: "₱40,000.00",
     titleSpecs: "SPECS2",
     subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
   },{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "Sale 50% off",
+    itemClassification: "discount",
     imgSrc: "/assets/temp-img/acer.png",
     priceBadge: "₱50,000.00",
     titleSpecs: "SPECS2",
     subSpecs: `Specs Specs Specs<br>Specs Specs Specs`
   },{
-    discountBadge: "Sale 50% off",
+    itemClassificationBadge: "New Arrival",
+    itemClassification: "new-arival",
     imgSrc: "/assets/temp-img/lenovo.png",
     priceBadge: "₱60,000.00",
     titleSpecs: "SPECS2",

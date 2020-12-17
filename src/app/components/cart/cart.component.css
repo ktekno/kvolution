@@ -59,11 +59,11 @@
     background-color: #f3f3f3;
 }
 
-.discount-badge{
+.item-classification-badge{
     position: absolute;
     left:0px;
     top:0px;
-    background:#d0011b;
+    /* background:#d0011b; */
     text-align: center;
     color:white;
     padding:5px 10px;

@@ -7,7 +7,8 @@ import { Injectable } from '@angular/core';
     
     constructor(){
         this.cart_contents = [{
-            discountBadge: "Sale 50% off",
+            itemClassificationBadge: "New Arrival",
+            itemClassification: "new-arival",
             imgSrc: "/assets/temp-img/lenovo.png",
             regularPrice: 10000,
             discountedPrice: 10000,
@@ -17,7 +18,8 @@ import { Injectable } from '@angular/core';
             subSpecs: `Specs Specs Specs<br>Specs Specs Specs`,
             url: "/"
             },{
-              discountBadge: "Sale 50% off",
+              itemClassificationBadge: "New Arrival",
+              itemClassification: "new-arrival",
               imgSrc: "/assets/temp-img/acer.png",
               regularPrice: 10000,
               discountedPrice: 10000,
@@ -27,7 +29,8 @@ import { Injectable } from '@angular/core';
               subSpecs: `Specs Specs Specs<br>Specs Specs Specs`,
               url: "/"
             },{
-              discountBadge: "Sale 50% off",
+              itemClassificationBadge: "Sale 50% off",
+              itemClassification: "discount",
               imgSrc: "/assets/temp-img/asus.png",
               regularPrice: 10000,
               discountedPrice: 10000,
@@ -37,7 +40,8 @@ import { Injectable } from '@angular/core';
               subSpecs: `Specs Specs Specs<br>Specs Specs Specs`,
               url: "/"
             },{
-              discountBadge: "Sale 50% off",
+              itemClassificationBadge: "Sale 50% off",
+              itemClassification: "discount",
               imgSrc: "/assets/temp-img/dell.png",
               regularPrice: 10000,
               discountedPrice: 10000,

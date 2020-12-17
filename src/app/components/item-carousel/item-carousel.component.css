@@ -18,11 +18,10 @@
     height: 44px;
     margin-top: 70px;
 }
-.discount-badge{
+.item-classification-badge{
     position: absolute;
     left:0px;
     top:0px;
-    background:#d0011b;
     text-align: center;
     color:white;
     padding:5px 10px;

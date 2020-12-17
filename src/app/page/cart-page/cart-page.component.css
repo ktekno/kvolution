@@ -181,6 +181,18 @@
     font-size:14px;
     border: 0px;
 }
+
+@media screen and (max-width: 1247px) {
+    .discount-notice {
+        line-height: 2;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    .container {
+        padding-left: 0px !important;
+    }
+}
 @media screen and (max-width: 720px) {
     .cart-page .spacer{
         height: 0px;

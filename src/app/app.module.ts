@@ -23,6 +23,7 @@ import { OrderReceivedPageComponent } from './page/order-received-page/order-rec
 import { LoginPageComponent } from './page/login-page/login-page.component';
 import { RegisterPageComponent } from './page/register-page/register-page.component';
 import { UserInfoPageComponent } from './page/user-info-page/user-info-page.component';
+import { ProductDetailPageComponent } from './page/product-detail-page/product-detail-page.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UserInfoPageComponent } from './page/user-info-page/user-info-page.comp
     OrderReceivedPageComponent,
     LoginPageComponent,
     RegisterPageComponent,
-    UserInfoPageComponent
+    UserInfoPageComponent,
+    ProductDetailPageComponent
   ],
   imports: [
     BrowserModule,

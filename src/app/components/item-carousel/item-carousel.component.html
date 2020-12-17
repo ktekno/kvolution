@@ -4,14 +4,14 @@
         <owl-carousel-o [options]="customOptions" class="cust-owl-carousel" #owlCar>
             <ng-container *ngFor="let navParam of navParams">
                 <ng-template carouselSlide>
-                    <div class="product-item-image ">
-                        <span class="discount-badge">{{navParam.discountBadge}}</span>
+                    <div class="product-item-image " [routerLink]="'/products'">
+                        <span class="item-classification-badge" [ngStyle]="navParam.itemClassification == 'discount'? {'background' : '#d0011b'} : {'background' : '#0ca6ea'}">{{navParam.itemClassificationBadge}}</span>
                         <img src={{navParam.imgSrc}} class="product-item-carousel">
                         <div  class="d-flex justify-content-after"> 
                             <span class="price-badge">{{navParam.priceBadge}}</span>
                         </div>
                     </div>
-                    <div class="specs-holder">
+                    <div class="specs-holder"  [routerLink]="'/products'">
                         <span style="font-weight: bold;">{{navParam.titleSpecs}}</span><br>
                         <span [innerHTML]="navParam.subSpecs"></span>
                     </div>

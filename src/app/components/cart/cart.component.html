@@ -7,7 +7,7 @@
             <ng-container *ngFor="let cart_content of _appService.cart_contents; let i = index;">
                 <div class="cart-item-container">
                     <div class="d-flex justify-content-start cart-spec-holder">
-                        <span class="discount-badge">{{cart_content.discountBadge}}</span>
+                        <span class="item-classification-badge" [ngStyle]="cart_content.itemClassification == 'discount'? {'background' : '#d0011b'} : {'background' : '#0ca6ea'}">{{cart_content.itemClassificationBadge}}</span>
                         <img src={{cart_content.imgSrc}} class="cart-item mr-4">
                         <div class="specs-holder">
                             <span style="font-weight: bold;">{{cart_content.titleSpecs}}</span><br>
