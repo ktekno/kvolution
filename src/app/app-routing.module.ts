@@ -9,6 +9,7 @@ import { LoginPageComponent } from './page/login-page/login-page.component';
 import { RegisterPageComponent } from './page/register-page/register-page.component';
 import { UserInfoPageComponent } from './page/user-info-page/user-info-page.component';
 import { ProductDetailPageComponent } from './page/product-detail-page/product-detail-page.component';
+import { SearchResultPageComponent } from './page/search-result-page/search-result-page.component';
 
 const routes: Routes = [
   { path: '' , component: HomePageComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'login' , component: LoginPageComponent },
   { path: 'register' , component: RegisterPageComponent },
   { path: 'user-info' , component: UserInfoPageComponent },
-  { path: 'products' , component: ProductDetailPageComponent }
+  { path: 'product' , component: ProductDetailPageComponent },
+  { path: 'search-result' , component: SearchResultPageComponent }
 ];
 
 @NgModule({

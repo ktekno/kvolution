@@ -37,7 +37,7 @@
 <app-cart #cart></app-cart>  
 <div id="subNavBar" style="display: flex; justify-content: flex-end" >
     <input class="searchbar" name="search" placeholder="Search..">
-    <button class="searchbutton">Search</button>
+    <button class="searchbutton" [routerLink]="'search-result'">Search</button>
     <div class="icon-holder" style="display: flex; justify-content: flex-end;" >
         <a class="nav-link icons cart-icon" role="button" aria-haspopup="true" aria-expanded="false" (click)="cart.openCart()">
             <span class="indicator">{{getQuantityTotal()}}</span>

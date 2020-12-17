@@ -24,6 +24,7 @@ import { LoginPageComponent } from './page/login-page/login-page.component';
 import { RegisterPageComponent } from './page/register-page/register-page.component';
 import { UserInfoPageComponent } from './page/user-info-page/user-info-page.component';
 import { ProductDetailPageComponent } from './page/product-detail-page/product-detail-page.component';
+import { SearchResultPageComponent } from './page/search-result-page/search-result-page.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ProductDetailPageComponent } from './page/product-detail-page/product-d
     LoginPageComponent,
     RegisterPageComponent,
     UserInfoPageComponent,
-    ProductDetailPageComponent
+    ProductDetailPageComponent,
+    SearchResultPageComponent
   ],
   imports: [
     BrowserModule,

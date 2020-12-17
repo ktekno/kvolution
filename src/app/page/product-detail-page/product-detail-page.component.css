@@ -114,6 +114,10 @@
     border-radius: 0px !important;
     color: white;
 }
+
+#pills-reviews-tab.nav-link.active {
+    background-color: #0ca6ea;
+}
 .spacer{
     height: 50px;
 }
