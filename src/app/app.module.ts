@@ -25,6 +25,11 @@ import { RegisterPageComponent } from './page/register-page/register-page.compon
 import { UserInfoPageComponent } from './page/user-info-page/user-info-page.component';
 import { ProductDetailPageComponent } from './page/product-detail-page/product-detail-page.component';
 import { SearchResultPageComponent } from './page/search-result-page/search-result-page.component';
+import { ShowOrderPageComponent } from './page/show-order-page/show-order-page.component';
+import { OrderDetailsPageComponent } from './page/order-details-page/order-details-page.component';
+import { ForgotPasswordComponent } from './page/forgot-password/forgot-password.component';
+import { NotFoundComponent } from './page/not-found/not-found.component';
+import { TemplatePageComponent } from './page/template-page/template-page.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +48,12 @@ import { SearchResultPageComponent } from './page/search-result-page/search-resu
     RegisterPageComponent,
     UserInfoPageComponent,
     ProductDetailPageComponent,
-    SearchResultPageComponent
+    SearchResultPageComponent,
+    ShowOrderPageComponent,
+    OrderDetailsPageComponent,
+    ForgotPasswordComponent,
+    NotFoundComponent,
+    TemplatePageComponent
   ],
   imports: [
     BrowserModule,

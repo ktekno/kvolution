@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserInfoPageComponent implements OnInit {
 
+  public isSuccess: number = -1;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  updateUser(): void {
+    this.isSuccess = 1;
+  }
 }

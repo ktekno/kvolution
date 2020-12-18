@@ -10,7 +10,13 @@
         <input class="user-info-input w-100 mt-2" type="password" name="password1" placeholder="Create Password">
         <input class="user-info-input w-100 mt-2" type="password" name="password2" placeholder="Confirm Password">
         
-        <button class="user-info-button mt-5 mb-3" style="background:#154f80; color:white;">Apply Changes</button>
+        <div *ngIf="isSuccess == 1" class="alert alert-success mt-3">
+            <strong>Success!</strong> User info has been updated.
+        </div>
+        <div *ngIf="isSuccess == 0" class="alert alert-danger mt-3">
+            <strong>Error!</strong> User failed to update for some reason.
+        </div>
+        <button class="user-info-button mt-5 mb-3" style="background:#154f80; color:white;"  (click)="updateUser()">Apply Changes</button>
     </div>
     <div class="spacer"></div>
 </div>

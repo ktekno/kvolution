@@ -82,4 +82,13 @@
 }
 
 @media screen and (max-width: 540px) {
+    
+    .logo-header{
+        width: calc(100% + 40px);
+        margin-left: -20px;
+    }
+    
+    .order-received-page-content{
+        padding: 20px 20px 20px 20px;
+    }
 }
