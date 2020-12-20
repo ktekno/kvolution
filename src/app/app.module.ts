@@ -16,20 +16,21 @@ import { ItemCarouselComponent } from './components/item-carousel/item-carousel.
 import { CartComponent } from './components/cart/cart.component';
 import { CartSummaryTableComponent } from './components/cart-summary-table/cart-summary-table.component'; 
 
-import { HomePageComponent } from './page/home-page/home.component';
-import { CartPageComponent } from './page/cart-page/cart-page.component';
-import { CheckoutPageComponent } from './page/checkout-page/checkout-page.component';
-import { OrderReceivedPageComponent } from './page/order-received-page/order-received-page.component';
-import { LoginPageComponent } from './page/login-page/login-page.component';
-import { RegisterPageComponent } from './page/register-page/register-page.component';
-import { UserInfoPageComponent } from './page/user-info-page/user-info-page.component';
-import { ProductDetailPageComponent } from './page/product-detail-page/product-detail-page.component';
-import { SearchResultPageComponent } from './page/search-result-page/search-result-page.component';
-import { ShowOrderPageComponent } from './page/show-order-page/show-order-page.component';
-import { OrderDetailsPageComponent } from './page/order-details-page/order-details-page.component';
-import { ForgotPasswordComponent } from './page/forgot-password/forgot-password.component';
-import { NotFoundComponent } from './page/not-found/not-found.component';
-import { TemplatePageComponent } from './page/template-page/template-page.component';
+import { HomePageComponent } from './pages/home-page/home.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
+import { OrderReceivedPageComponent } from './pages/order-received-page/order-received-page.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { UserInfoPageComponent } from './pages/user-info-page/user-info-page.component';
+import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component';
+import { SearchResultPageComponent } from './pages/search-result-page/search-result-page.component';
+import { ShowOrderPageComponent } from './pages/show-order-page/show-order-page.component';
+import { OrderDetailsPageComponent } from './pages/order-details-page/order-details-page.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { TemplatePageComponent } from './pages/template-page/template-page.component';
+import { CategoryPageComponent } from './pages/category-page/category-page.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { TemplatePageComponent } from './page/template-page/template-page.compon
     OrderDetailsPageComponent,
     ForgotPasswordComponent,
     NotFoundComponent,
-    TemplatePageComponent
+    TemplatePageComponent,
+    CategoryPageComponent
   ],
   imports: [
     BrowserModule,
