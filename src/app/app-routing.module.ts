@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomePageComponent } from './pages/home-page/home.component';
+import { CategoryPageComponent } from './pages/category-page/category-page.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
 import { OrderReceivedPageComponent } from './pages/order-received-page/order-received-page.component';
@@ -14,6 +15,7 @@ import { ShowOrderPageComponent } from './pages/show-order-page/show-order-page.
 import { OrderDetailsPageComponent } from './pages/order-details-page/order-details-page.component';
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { DiyPageComponent } from './pages/diy-page/diy-page.component';
 import { TemplatePageComponent } from './pages/template-page/template-page.component';
 
 const routes: Routes = [
@@ -27,8 +29,10 @@ const routes: Routes = [
   { path: 'user-info' , component: UserInfoPageComponent },
   { path: 'product' , component: ProductDetailPageComponent },
   { path: 'search-result' , component: SearchResultPageComponent },
+  { path: 'category' , component: CategoryPageComponent },
   { path: 'show-orders' , component: ShowOrderPageComponent },
   { path: 'order-details' , component: OrderDetailsPageComponent },
+  { path: 'diy-page' , component: DiyPageComponent },
   { path: ':template' , component: TemplatePageComponent },
   { path: '**', component: NotFoundComponent }
 ];

@@ -31,6 +31,7 @@ import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { TemplatePageComponent } from './pages/template-page/template-page.component';
 import { CategoryPageComponent } from './pages/category-page/category-page.component';
+import { DiyPageComponent } from './pages/diy-page/diy-page.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { CategoryPageComponent } from './pages/category-page/category-page.compo
     ForgotPasswordComponent,
     NotFoundComponent,
     TemplatePageComponent,
-    CategoryPageComponent
+    CategoryPageComponent,
+    DiyPageComponent
   ],
   imports: [
     BrowserModule,
