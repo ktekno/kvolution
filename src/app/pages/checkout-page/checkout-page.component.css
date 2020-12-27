@@ -85,6 +85,15 @@
     font-size:14px;
     border: 0px;
 }
+
+.tos-table {
+    border: 1px solid #6bc7ef;
+    background-color: #ddf0f8;
+    width: 100%;
+}
+.tos-table tr{
+    line-height: 3;
+}
 @media screen and (max-width: 969px) {
 
     .info-input-desktop{
